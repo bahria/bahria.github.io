@@ -1,12 +1,8 @@
 body { 
-	font: 75% georgia, sans-serif;
+	font-family: georgia, sans-serif;
 	line-height: 1.88889;
 	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
 	}
 p { 
-	margin-top: 0; 
 	text-align: justify;
 	}
