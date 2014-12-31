@@ -1,8 +1,26 @@
-body { 
-	font-family: georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	}
-p { 
-	text-align: justify;
-	}
+body {
+    font-family: georgia, sans-serif;
+    line-height: 1.88889;
+    color: #555753;
+}
+
+p {
+    text-align: justify;
+}
+
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: #B7A5DF;
+}
+
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #D4CDDC;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: underline;
+    color: #9685BA;
+}
