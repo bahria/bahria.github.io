@@ -1,7 +1,8 @@
 body {
     font-family: georgia, sans-serif;
     line-height: 1.88889;
-    color: #f4f4f4;
+    color: #555753;
+    background-color: #555753;
 }
 
 p {
