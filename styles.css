@@ -26,8 +26,8 @@ a:hover, a:focus, a:active {
 }
 
 header {
-    background-color: rgb(255,126,113);
-    height: 400px;
+    background-color: rgb(240, 11, 63);
+    height: 300px;
     border-top: 5px solid rgb(68,68,68);
 }
 
@@ -44,7 +44,7 @@ header {
 
 .sub-logo {
     margin-top: 10px;
-    color: rgba(184,43,26,0.8);
+    color: black;
     line-height: 50px;
     font-size: 30px;
     font-weight: 400;
