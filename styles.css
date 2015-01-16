@@ -11,6 +11,10 @@ p {
     text-align: justify;
 }
 
+h4 {
+    text-align: center;
+}
+
 a:link {
     font-weight: bold;
     text-decoration: none;
