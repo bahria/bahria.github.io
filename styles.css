@@ -12,7 +12,11 @@ p {
 }
 
 h4 {
-    text-align: center;
+    font-size: 2em;
+    color: #036;
+    margin: 0;
+    padding-top: 5px;
+    font-weight: normal
 }
 
 a:link {
