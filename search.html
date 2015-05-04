@@ -68,20 +68,22 @@ p {
     </div>
 
 
-<div ng-app="myApp" ng-controller="namesCtrl">
+<body ng-app="app" ng-controller="appCtrl">
+   <h2>{{title}}</h2>
+  <input class="form-control" placeholder="Search" ng-model="searchContact" type="text" />
+  <p>*Search a name or phone number</p>
+  
+  <table id="searchContacts" class="table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>Phone number</th>
+    </tr>
+    <tr ng-repeat="contact in contacts | filter:searchContact">
+      <td>{{contact.name}}</td>
+      <td>{{contact.number}}</td>
+    </tr>
+  </table>
 
-<p>Filtering input:</p>
-
-<p><input type="text" ng-model="test"></p>
-
-<ul>
-  <li ng-repeat="x in names | filter:test | orderBy:'country'">
-    {{ (x.name | uppercase) + ', ' + x.country }}
-  </li>
-</ul>
-
-</div>
-
-<script src="http://www.w3schools.com/angular/namesController.js"></script>
+<script src="/places.js"></script>
 </body>
 </html>
