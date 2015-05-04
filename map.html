@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bahria 24 - Map</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+
+    <meta name="description" content="Access Map of Bahria Town, Lahore.">
+    <meta name="og:description" content="Quick maps access of Bahria Town Lahore."/>
+    <meta name="og:url" content="https://bahria24.com/map"/>
+    <meta name="og:title" content="Bahria 24 Map"/>
+    <meta name="og:image" content="http://i.imgur.com/Z92ioGp.png"/>
+
+    <link id="favicon" rel="shortcut icon" href="http://i.imgur.com/xaoEURU.png" type="image/x-png" />
+    <link rel="shortcut icon" href="http://i.imgur.com/1Akob7B.png" sizes="48x48">
+    <link rel="shortcut icon" href="http://i.imgur.com/uWgmag1.png" sizes="64x64">
+</head>
+<style>
+ <style>
+  #map-canvas{
+  height: 500px;
+  width: 500px;
+  border: 3px solid black;
+}
+  </style>
+</style>
+
+<body>
+
+  <div id="map-canvas"></div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
+
+
+ <script>
+    if (document.getElementById('map-canvas')) {
+    var myLatlng = new google.maps.LatLng(52.525595, 13.393085);
+    var mapOptions = {
+        zoom: 14,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+}
+    //@ sourceURL=pen.js
+  </script>
+
+</body>
+
+</html>
