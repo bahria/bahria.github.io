@@ -31,28 +31,30 @@
   <div id="map-canvas"></div>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false" type="text/javascript"></script>
 
+  <script src='//assets.codepen.io/assets/libs/fullpage/jquery-c152c51c4dda93382a3ae51e8a5ea45d.js'></script>
 
- <script>
-   // if HTML DOM Element that contains the map is found...
-if (document.getElementById('map-canvas')){
- 
-    // Coordinates to center the map
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage('resize', "*");
+    }
+  </script>
+
+  <script src="//assets.codepen.io/assets/common/stopExecutionOnTimeout-6c99970ade81e43be51fa877be0f7600.js"></script>
+
+  <script>
+    if (document.getElementById('map-canvas')) {
     var myLatlng = new google.maps.LatLng(31.3650158,74.1817851);
- 
-    // Other options for the map, pretty much selfexplanatory
     var mapOptions = {
         zoom: 14,
         center: myLatlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
- 
-    // Attach a map to the DOM Element, with the defined settings
-    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 }
-    
+    //@ sourceURL=pen.js
   </script>
 
 </body>
+
 
 </html>
